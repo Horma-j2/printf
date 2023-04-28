@@ -6,7 +6,7 @@
  * Return: printed chars count
  */
 
-int print_reversed(va_list arg)
+int print_str_reversed(va_list arg)
 {
 	int len;
 	char *str;
@@ -25,7 +25,7 @@ int print_reversed(va_list arg)
 }
 
 /**
- * rot13 - convert stringto the rot13
+ * rot13 - convert string to the rot13
  * @list: func param 1
  * Return: string converted
  */
@@ -33,25 +33,25 @@ int print_reversed(va_list arg)
 int rot13(va_list list)
 {
 	int i;
-	int x;
+	int j;
 	char *str;
 	char s[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-	char u[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+	char sr[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
 	str = va_arg(list, char *);
 	if (str == NULL)
 		return (-1);
 	for (i = 0; str[i] != '\0'; i++)
 	{
-		for (x = 0; x <= 52; x++)
+		for (j = 0; j <= 52; j++)
 		{
-			if (str[i] == s[x])
+			if (str[i] == s[j])
 			{
-				_write_char(u[x]);
+				_write_char(sr[j]);
 				break;
 			}
 		}
-		if (x == 53)
+		if (j == 53)
 			_write_char(str[i]);
 	}
 	return (i);

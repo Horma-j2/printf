@@ -34,9 +34,10 @@ char *rev_string(char *s)
 /**
  * write_base - write char on stdo
  * @str: func param
+ * Return: void value
  */
 
-void write_base(char *str)
+void write_base_str(char *str)
 {
 	int i;
 
@@ -51,7 +52,7 @@ void write_base(char *str)
  * Return: int rep the len of number
  */
 
-unsigned int base_len(unsigned int num, int base)
+unsigned int base_length(unsigned int num, int base)
 {
 	unsigned int i;
 
