@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_reversed - calls the reserve function
+ * print_str_reversed - calls the reserve function
  * @arg: func 1
  * Return: printed chars count
  */

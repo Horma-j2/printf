@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * parser - func to receive all printf input
+ * inputter - func to receive all printf input
  * @format: func param 1
  * @f_list: func param 2
  * @arg_list: func param 3

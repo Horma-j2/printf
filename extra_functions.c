@@ -32,7 +32,7 @@ char *rev_string(char *s)
 }
 
 /**
- * write_base - write char on stdo
+ * write_base_str - write char on stdo
  * @str: func param
  * Return: void value
  */
@@ -46,7 +46,7 @@ void write_base_str(char *str)
 }
 
 /**
- * base_len - calc length of an octal number
+ * base_length - calc length of an octal number
  * @num: func param 1
  * @base: func param 2
  * Return: int rep the len of number
