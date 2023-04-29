@@ -1,8 +1,9 @@
 #include "main.h"
+
 /**
  * print_char - Prints character
  * @list: list of arguments
- * Return: Will return the amount of characters printed.
+ * Return: return the amount of characters to be printed.
  */
 int print_char(va_list list)
 {
@@ -13,7 +14,7 @@ int print_char(va_list list)
 /**
  * print_string - Prints a string
  * @list: list of arguments
- * Return: Will return the amount of characters printed.
+ * Return: return the amount of characters to be printed.
  */
 int print_string(va_list list)
 {
@@ -31,7 +32,7 @@ int print_string(va_list list)
 /**
  * print_percent - Prints a percent symbol
  * @list: list of arguments
- * Return: Will return the amount of characters printed.
+ * Return: return the amount of characters to be printed.
  */
 int print_percent(__attribute__((unused))va_list list)
 {
@@ -42,7 +43,7 @@ int print_percent(__attribute__((unused))va_list list)
 /**
  * print_integer - Prints an integer
  * @list: list of arguments
- * Return: Will return the amount of characters printed.
+ * Return: return the amount of characters to be printed.
  */
 int print_integer(va_list list)
 {
@@ -64,9 +65,9 @@ int unsigned_integer(va_list list)
 	num = va_arg(list, unsigned int);
 
 	if (num == 0)
-		return (print_unsgined_number(num));
+		return (print_unsigned_number(num));
 
 	if (num < 1)
 		return (-1);
-	return (print_unsgined_number(num));
+	return (print_unsigned_number(num));
 }
