@@ -21,7 +21,7 @@ int inputter(const char *format, con_vert f_list[], va_list arg_list)
 			{
 				if (format[i + 1] == f_list[j].sym[0])
 				{
-					r_val = f_list[j].f(arg_list);
+					return_val = f_list[j].f(arg_list);
 					if (return_val == -1)
 						return (-1);
 					printed_chars += return_val;
